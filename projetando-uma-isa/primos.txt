@@ -1,0 +1,25 @@
+STI #0 0.0  
+STI #1 1.0
+STI #2 100.0
+STI #3 2.0
+STI #4 1.0
+ADD #4 1.0
+STO #4
+STI #5 1.0
+STI #6 0.0
+BLT #2 #4 26
+BLT #4 #5 22
+REM #4 #5
+STO #7
+BEQ #7 #0 19
+BLT #3 #6 6
+ADD #5 1
+STO #5
+J 11
+ADD #6 1
+STO #6
+J 15
+BEQ #6 #3 24
+J 6
+DSP #4
+J 6
